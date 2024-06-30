@@ -5,7 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind example</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
 </head>
 <body class="dark:bg-gray-700 dark:text-white p-4">
     <div class="max-w-[1000px] w-full mx-auto relative">
@@ -27,8 +28,19 @@
             <div id="app" class="w-full bg-blue-100 p-2"></div>
         </div>
     </div>
-    <script src="./app.js"></script>
-    <script src="https://morethanwallet.com/appstore/index.js"></script>
+   
 </body>
+<!-- special scripts for integration in MTW gallery - must be placed at the bottom of the HTML after your code -->
+<script>
+    // custom config for the MTW app 
+    const mtwAppConfig = {
+        border: true // app border in the MTW page                    
+    }
+</script>
+<script src="https://morethanwallet.com/appstore/index.js"></script>
+
+
+<!--Updated 13:21-->
 </html>
-<!--Updated 12:02-->
+
+
